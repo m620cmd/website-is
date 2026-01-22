@@ -1,0 +1,311 @@
+
+
+*   {
+    margin:0; padding:0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    outline: none; border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+   
+
+}
+body{
+    padding-top: 100px;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding: 60px;
+    overflow-x: hidden;
+}
+ 
+/* section */
+section{
+    padding: 20px;
+}
+
+/* heading */
+.heading{
+    text-align: center;
+    font-size: 40px;
+    color: #333;
+    padding: 10px;
+    margin: 20px;
+    background: rgba(255, 51, 153,.05);
+
+
+}
+
+.heading span{
+    color: green;
+
+
+}
+/* button */
+.btn {
+    display: inline-block;
+    margin-top: 10px;
+    border-radius: 50px;
+    background: #333;
+    color: #fff;
+    padding: 10px 35px;
+    cursor: pointer;
+    font-size: 17px;
+
+     
+
+
+}
+
+.btn:hover{
+    background: green;
+}
+
+/*header */
+header{
+    position:fixed;
+    top:0; left:0; right:0;
+    background: #fff;
+    padding: 20px 90px;   
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+    box-shadow: 0px 5px rgba(0,0,0,.1);
+    
+}
+
+header .logo{
+    font-size: 30px;
+    color: #333;
+    font-weight: bold;
+}
+
+header .logo span{
+    color: green;
+}
+header .navbar a{
+    font-size: 20px;
+    padding: 0 15px;
+
+    color: #666666;
+text-decoration: none;
+}
+ header .navbar a:hover{
+    color: green;
+    border-radius: 5px;
+ }
+/* header icon */
+ header .icons a{
+    
+    margin-left: 15px;
+
+ }
+header .icons img{
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+header .icons img:hover{
+    transform: scale(1.1);
+    filter: saturate(100%)
+}
+/*footer*/
+ footer{
+             background:#008000;
+             color:#fff;
+             text-align:center;
+             padding:15px;
+             font-size:14px;
+             margin-top:40px;
+        }
+ /*home section*/
+
+.home{
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background: url(../assests/background.jpeg) no-repeat;
+    background-size: cover; 
+    background-position: center;
+}
+ .home .content{
+    max-width: 500px;
+
+ }
+ .home .content h3{
+font-size: 60px;
+color: #333;
+ }
+ 
+ .home .content span{
+    font-size: 35px;
+    color: green;
+    padding: 10px 0;
+    line-height: 1.5;
+    
+    .home .content p{
+    font-size: 15px;
+    color: #999;
+     padding: 10px 0;
+    line-height: 1.5;
+
+ }
+
+
+
+ }
+
+ /* text on right */
+ /*about section*/
+.about-row{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px 0;
+    
+}
+
+.about-row .video-container{
+    flex:1 1 45%;
+    
+}
+
+
+
+
+
+
+
+
+.about-row .video-container video{
+
+width: 100%;
+height: 300px;
+border-radius: 5px;
+box-shadow: 5px 10px rgba(0,0,0,.1);
+
+object-fit: cover;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+.about-row .content{
+    flex:1 1 45%;
+}
+
+
+
+
+
+
+.about-row .content h3{
+    font-size: 25px;
+    color: #333;
+}
+
+
+
+.about-row .content p{
+    font-size: 16px;
+    color: #666;
+   
+   margin: 10px 0;
+    line-height: 1.6;
+
+}
+
+
+
+
+
+
+
+/*--form section--*/
+.feedback form{
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.feedback form .form-group{
+    display: flex;
+    flex-direction: column;
+}
+
+.feedback form input,
+.feedback form textarea{
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    resize: none;
+}
+
+.feedback form button{
+    width: max-content;
+    align-self: flex-start;
+}
+
+
+.team{
+    padding: 50px 9%;
+}
+
+.team-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+gap: 30px;
+
+
+}
+
+
+.team-card{
+    background: #f9f9f9;
+    padding: 25px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 10px 10px rgba(0,0,0,.1);
+    transition: transform .4s ease;
+}
+
+
+.team-card:hover {
+    transform: translateY(-8px);
+}
+
+.team-card img {
+    width: 130px;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 11px;
+}
+
+.team-card h3 {
+    font-size: 30px;
+    color: #333;
+}
+
+.team-card p {
+    font-size: 14px;
+    color: #666;
+}
+
